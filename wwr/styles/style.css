@@ -1,0 +1,204 @@
+
+
+#contant { 
+    max-width:1600px; 
+    margin:  auto;
+}
+/* Texting align */
+body {
+    margin: 0;
+    padding: 0;
+}
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+nav a {
+    text-align: center;
+}
+#hero-msg h1{
+    text-align: center;
+} 
+#hero-msg h4{
+    text-align: center;
+}
+.button-box{
+    text-align: center;
+}
+main section{
+    text-align: center;
+}
+#background{
+    height: 725px;
+}
+
+/* Adding Background color and color to the text */
+body {
+    background-color: antiquewhite;
+}
+header {
+    background-color: #E88873;
+    min-height: 80px;
+}
+nav a:hover {
+    background-color: cadetblue;
+    text-decoration: underline;
+}
+.book:hover, .join:hover{
+    background-color: cadetblue;
+    color: black;
+    text-decoration: underline;
+}
+#background{
+    background-color: #E0AC9D;
+}
+.msg{
+    background-color: #E0AC9D;
+}
+footer{
+    background-color: #E88873;
+}
+nav a{
+    background-color: #E88873;
+}
+nav a:hover {
+    background-color: cadetblue;
+    color: black;
+}    
+.home-title{
+    background-color: none;
+}
+h4{
+    background-color: none;
+}
+.book:hover, .join:hover{
+    background-color: cadetblue;
+    color: black;
+}
+.msg h2{
+    color: saddlebrown;
+}
+.msg p{
+    color: brown;
+}
+footer{
+    background-color: #E88873;
+}
+footer a{
+    background-color: #E88873;
+}
+footer a:hover{
+    background-color: cadetblue;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Adding width to images */
+.logo {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+    display: block;
+}
+.icon {
+    width: 40px;
+}
+
+/*  */
+nav a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}    
+.book, .join{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: #E88873;
+}    
+footer a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}    
+footer p {
+    font-size: 1em;
+}  
+footer p a:hover {
+    text-decoration: underline;
+}    
+
+/* Adding fonts */
+.home-title{
+    font-family: "Great Vibes", cursive;
+    font-size: 3em;
+    font-weight: bolder;
+}
+#hero-msg h4 {
+  font-family: "Dongle", "Helvetica", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.home-grid h2{
+    font: 3em Great Vibes;;
+    font-style: oblique;
+    font-weight: bolder;
+}
+.home-grid p{
+    font-family: "Dongle", "Helvetica", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.social img{
+    width: 40px;
+}
+
+/* Adding padding and margin */
+h2 {
+    padding: 0;
+}
+#logo_link{
+    padding-top: 5px;
+    display: inline-block;
+    height: auto;
+}
+.book,.join{
+    padding: 15px 30px;
+    margin-top: 50px;
+}
+.icon{
+    padding-top: 10px;
+}
+.msg {
+    padding: 35px;
+}  
+.msg p {
+padding-bottom: 15px;
+}  
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+} 
+footer .social img {
+    padding-top: 15px;
+}
+.home-title{
+    margin-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+/* Border placement */
+.book,.join{
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #E0AC9D;
+}
+main section img {
+    box-sizing: border-box;
+}
