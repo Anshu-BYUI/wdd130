@@ -1,0 +1,47 @@
+body{
+background-color: #ffecd7;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100px;
+}
+.home-grid {
+    background-color: #008DB1;
+    border: 4px solid #004E63;
+    border-radius: 25px;
+    width: 400px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+
+.card-img{
+    width: 350px;
+    padding: auto;
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
+.title{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fffffe;
+}
+
+a{
+    font-family: Helvetica, Arial, sans-serif;
+    color:#91e4fb;
+    text-decoration: none;
+}
+
+#list-msg{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fffffe;
+}
+
+#quote-msg{
+    font-family: "Nanum Brush Script", Arial;
+    color: #ffd783;
+    font-size: 25px;
+}
+
+
