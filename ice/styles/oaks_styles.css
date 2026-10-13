@@ -10,7 +10,7 @@ min-height: 100px;
     background-color: #008DB1;
     border: 4px solid #004E63;
     border-radius: 25px;
-    width: 400px;
+    width: 500px;
     padding: 24px 20px;
     box-sizing: border-box;
 }
@@ -35,7 +35,11 @@ a{
 
 #list-msg{
     font-family: Helvetica, Arial, sans-serif;
+    font-size:20px;
     color: #fffffe;
+    text-align: left;
+    margin: auto;
+    width: 65%;
 }
 
 #quote-msg{
