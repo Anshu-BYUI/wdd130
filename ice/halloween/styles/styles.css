@@ -1,0 +1,121 @@
+/* Add your CSS here to style your halloween page */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nanum+Brush+Script&display=swap');
+#wrapper {
+    text-align: center;
+    background-color: blueviolet;
+
+}
+
+header nav ul {
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding:15px;
+    margin:10px;
+    list-style-type: " ★";
+    box-shadow: 10px 10px 20px #2b0a3d;
+    font-family: 'Dancing Script';
+}
+header nav ul {
+    content: " ★";
+    color: #2b0a3d;
+    font-size: 1.5em
+}
+
+header nav {
+    position: relative;
+    margin-bottom: 50px;   /* space for the drips to hang into */
+}
+header nav::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: -37px;          /* how far the drips hang down */
+    height: 40px;
+    background:
+        radial-gradient(circle at 20px 0, #FF8C00 18px, transparent 19px) 0 0 / 80px 40px repeat-x,
+        radial-gradient(circle at 60px 0, #FF8C00 10px, transparent 11px) 0 0 / 80px 40px repeat-x;
+    pointer-events: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows:auto auto auto;
+    max-width:800px;
+    margin: 0 auto;
+
+}
+
+#pumkins {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding:20px;
+    color: #2b0a3d;
+    box-shadow: 10px 10px 20px #2b0a3d;
+    font-family: 'Nanum Brush Script';
+    font-size: 20px;
+}
+
+#bats{
+    grid-column: 3/3;
+    grid-row: 2/3;
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    margin-left: 5px;
+    padding:20px;
+    color: #2b0a3d;
+    box-shadow: 10px 10px 20px #2b0a3d;
+    font-family: 'Nanum Brush Script';
+    font-size: auto;
+}
+
+#skeletons{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    margin-right: 5px;
+    padding:20px;
+    color: #2b0a3d;
+    box-shadow: 10px 10px 20px #2b0a3d;
+    font-family: 'Nanum Brush Script';
+    font-size: 20px;
+}
+img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width:410px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px #2b0a3d;
+}
+h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: orange;
+    text-shadow: 5px 5px 10px orangered;
+    font-family: 'Dancing Script';
+    font-size: 50px;
+}
+footer{
+    background-color: #FFA500;
+    border: 4px solid #FF8C00;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 20px;
+}

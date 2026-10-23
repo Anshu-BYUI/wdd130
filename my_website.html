@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="my_website.html">
+                <img class="logo" src="images_mw/website_logo.png" alt="My Website Logo">
+            </a>
+            <nav>
+                <a href="my_website.html">Home</a>
+            </nav>
+            <div id="dropdown">
+                <button onclick="myFunction()" class="dropbtn">My Projects</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="wwr/index.html">WWR</a>
+                    <a href="icepc/oaks.html">ICE - President Oaks</a>
+                    <!-- <a href="#">Link 3</a> -->
+                </div>
+            </div>
+            <nav>
+                <a href="#">About Me</a>
+            </nav>
+        </header>
+    </div>
+    <div id="hero-about">
+        <h1>About This Page</h1>
+        <h4>
+            Welcome to my personal website! This page showcases the projects I have created while learning web development. 
+            Each project demonstrates my progress in HTML and CSS, including how to organize information, add images, 
+            create navigation links, and design a website that is easy to use. You can explore my projects below to learn more 
+            about my work and what I have learned.
+        </h4>
+    </div>
+
+<main class="home-grid">
+
+    <article class="wwr-project">
+        <img class="wwr" src="#" alt="WWR Image">
+        <section class="wwr-msg">
+            <h2>White Water Rafting</h2>
+            <p>
+                My website, Dry Oar Boating, is designed to promote whitewater rafting and outdoor adventures. 
+                It features sections about rivers, camping, and rapids, along with images of beautiful natural landscapes. 
+                The homepage encourages visitors to make memories, explore nature, and book an adventure. It also includes navigation links, calls to action, 
+                and contact information to help visitors learn more about the company. The overall goal is to make outdoor adventures appealing and 
+                encourage people to experience the beauty of nature.
+            </p>
+            <a class="join" href="wwr/index.html">View project</a>
+        </section>
+    </article>
+
+    <article class="icepc-project">
+        <img class="icepc" src="#" alt="ICE-President Card Project">
+        <section class="icepc-msg">
+            <h2>President Oaks Overview</h2>
+            <p>
+                My website is an informational page about Dallin H. Oaks, the 18th President of The Church of Jesus Christ of Latter-day Saints. 
+                It includes his photograph, birth date, the date he became an Apostle, and the date he became Church President. 
+                The page also features a quotation about loving God and others. The purpose of the website is to introduce visitors to Dallin H. Oaks and 
+                provide basic information about his life and religious leadership in a simple, organized layout.
+            </p>
+            <a class="join" href="icepc/oaks.html">View project</a>
+        </section>
+    </article>
+
+    <article class="about_me-project">
+        <img class="about_me" src="#" alt="About Me">
+        <section class="icepc-msg">
+            <h2>About me</h2>
+            <p>Description Here</p>
+            <a class="join" href="#">View project</a>
+        </section>
+    </article>
+
+<footer>
+    <p>Created by Anshu Ramesh &copy; 2026</p>
+    <p><a href="contactus.html">Contact Me</a></p>
+    <div class="social">
+        <a href="https://instagram.com" target="_blank">
+            <img src="wwr/Images/instagram.png" alt="intagram icon">
+        </a>
+    </div>
+</footer>
+</main>
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+    </script>
+</body>
+</html>
