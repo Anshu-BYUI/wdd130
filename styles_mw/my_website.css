@@ -1,0 +1,183 @@
+
+@import url("https://fonts.googleapis.com/css2?family=ComicSansMS&family=Fraunces:wght@600&display=swap");
+
+/* WHOLE PAGE */
+body {
+    margin: 0;                    
+    background-color: #FBF1EE;     
+    color: #6B4A4F;               
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: "Fraunces", serif;
+    color: #3B0F14;               
+}
+
+a {
+    color: #B3202E;                 
+}
+
+a:hover {
+    color: #E5383B;                 
+}
+
+/* HEADER */
+#content {
+    background-color: #3B0F14;
+    border-bottom: 5px solid #D9A441;     
+}
+
+header {
+    display: flex;                
+    align-items: center;            
+    gap: 100px;                     
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    background-color: #F0CFC7;
+}
+
+header nav a,
+.dropbtn {
+    color: #FBF1EE;               
+    text-decoration: none;         
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 16px;
+}
+
+header nav a:hover{
+    text-decoration: underline #D9A441;
+}
+header nav a:hover,
+.dropbtn:hover {
+    color: #E5383B;   
+    text-decoration: underline #D9A441;             
+}
+
+/* DROPDOWN MENU */
+#dropdown {
+    position: relative;             
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;                  
+    position: absolute;
+    background-color: #FFFFFF;      
+    border: 1px solid #F0CFC7;    
+    min-width: 250px;
+    z-index: 1;                    
+}
+
+.dropdown-content a {
+    display: block;                 
+    padding: 10px;
+    color: #6B4A4F;                 
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #FBF1EE;      
+    color: #B3202E;                 
+}
+
+.show {
+    display: block;                 
+}
+
+/* ABOUT SECTION AT THE TOP */
+#hero-about {
+    max-width: 900px;
+    margin: 0 auto;               
+    padding: 40px 20px;
+}
+
+#hero-about h4 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/*PROJECTS  */
+.home-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+article {
+    display: flex;                  
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+article:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+article img {
+    width: 45%;
+    height: 250px;
+    background-color: #F0CFC7;      
+    border: 6px solid #F0CFC7;      
+}
+
+article section {
+    width: 55%;
+    background-color: #FFFFFF;      
+    border: 1px solid #F0CFC7;     
+    padding: 20px;
+}
+
+/*  BUTTON ("View project")  */
+.join {
+    display: inline-block;
+    background-color: #B3202E;      
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.join:hover {
+    background-color: #E5383B;    
+    color: #FFFFFF;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #3B0F14;    
+    color: #F0CFC7;               
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 20px;
+    border-top: 5px solid #D9A441;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #FBF1EE; 
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline #D9A441;
+}
+
+.social img {
+    width: 40px;
+}
