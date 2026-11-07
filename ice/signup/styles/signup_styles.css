@@ -1,0 +1,52 @@
+
+
+#formContainer {
+    background-color: white;
+    border: 10px solid darkblue;
+    border-radius: 30px;
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.lol{
+    background-image: url("/ice/signup/images/jesus_feeds_5000.jpeg");
+    background-size: cover;
+}
+h1,h2{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 0 black;
+}
+section, h3{
+    text-align: center;
+    margin-bottom: 1lh;
+}
+#closeBtn{
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+    label, input{
+        margin-bottom: 1lh;
+    }
+}
+
+.books{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    justify-content: center;
+    gap: 2px;
+    img{
+    width: 95px;
+    }
+}
+
+
+
