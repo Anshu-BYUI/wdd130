@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Anshu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #070b1a;
+    --panel: #0d1224;
+    --snow: #f3f6ff;
+    --mist: #b9c3e0;
+    --blue: #5aa9ff;
+    --yellow: #ffc933;
+    --green: #6fd34a;
+    --purple: #a077ff;
+    --orange: #ff9a2e;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--night);
+    color: var(--snow);
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 5vw;
+    background: rgba(7, 11, 26, .92);
+    border-bottom: 1px solid #1c2442;
+  }
+  .logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.6rem; color: var(--snow); text-decoration: none;
+  }
+  .site-header nav a {
+    color: var(--mist); text-decoration: none; margin-left: 22px;
+  }
+  .site-header nav a:hover { color: var(--snow); text-decoration: underline; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 90px 5vw 220px;
+    background: linear-gradient(#0a1030 0%, #14214d 70%, #1d2f66 100%);
+    overflow: hidden;
+  }
+  .hero h1 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: clamp(4rem, 14vw, 9.5rem);
+    line-height: 1;
+    margin: 0;
+    transform: rotate(-3deg);
+    text-shadow: 0 0 40px rgba(140, 180, 255, .45);
+  }
+  .tagline {
+    font-family: "Kaushan Script", cursive;
+    font-size: clamp(1.3rem, 3.4vw, 2rem);
+    color: var(--blue);
+    margin: 22px 0 0;
+  }
+  .mountains {
+    position: absolute; left: 0; right: 0; bottom: -1px;
+    width: 100%; height: 200px; display: block;
+  }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 0 5vw 80px; }
+
+  /* Intro panel (right half of the poster) */
+  .intro {
+    margin-top: -60px;
+    position: relative;
+    background: var(--panel);
+    border: 2px solid var(--snow);
+    border-radius: 28px;
+    padding: clamp(24px, 5vw, 56px);
+  }
+  .intro h2 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    margin: 0 0 4px;
+  }
+  .intro .rule {
+    width: 180px; height: 5px; border-radius: 3px;
+    background: var(--yellow); margin-bottom: 24px;
+    transform: rotate(-1.5deg);
+  }
+  .intro p { max-width: 62ch; margin: 0 0 1em; }
+  .thanks {
+    font-family: "Kaushan Script", cursive;
+    color: var(--yellow);
+    font-size: 1.7rem;
+    margin-top: 28px !important;
+  }
+
+  /* Category cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .card {
+    --c: var(--blue);
+    border: 2px solid var(--c);
+    border-radius: 26px 38px 30px 42px;
+    padding: 24px 28px 26px;
+    background: linear-gradient(160deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+  }
+  .card h3 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--c);
+    margin: 0 0 10px;
+  }
+  .card p { margin: 0; }
+  .card ul { list-style: none; margin: 0; padding: 0; }
+  .card li { padding-left: 22px; position: relative; margin: 6px 0; }
+  .card li::before {
+    content: ""; position: absolute; left: 0; top: .6em;
+    width: 9px; height: 9px; border-radius: 50%; background: var(--c);
+  }
+  .student { --c: var(--blue); grid-column: 1 / -1; }
+  .student .byu {
+    margin-top: 16px;
+    display: inline-block;
+    border-top: 2px solid var(--snow);
+    padding-top: 6px;
+    font-weight: 600; letter-spacing: .3em; text-indent: .3em;
+  }
+  .interests { --c: var(--yellow); }
+  .hobbies   { --c: var(--green); }
+  .goals     { --c: var(--purple); }
+  .funfacts  { --c: var(--orange); }
+
+  .closing {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .closing p {
+    font-family: "Kaushan Script", cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    line-height: 1.25;
+    margin: 0 0 28px;
+    transform: rotate(-2deg);
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid var(--yellow);
+    border-radius: 999px;
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn:hover { background: var(--yellow); color: var(--night); }
+
+  footer {
+    text-align: center; color: var(--mist);
+    padding: 24px; border-top: 1px solid #1c2442; font-size: .95rem;
+  }
+
+  @media (max-width: 560px) {
+    .site-header nav a { margin-left: 14px; }
+    .hero { padding-bottom: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Anshu</a>
+  <nav>
+    <a href="my_website.html">Home</a>
+
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>About Me</h1>
+  <p class="tagline">Dream • Learn • Build • Grow</p>
+  <svg class="mountains" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 200 L0 150 L160 70 L230 110 L340 30 L470 130 L560 90 L700 160 L820 60 L930 120 L1050 80 L1200 140 L1200 200 Z" fill="#0f1a40"/>
+    <path d="M340 30 L395 72 L360 66 L340 85 L322 62 L300 70 Z" fill="#dfe8ff" opacity=".85"/>
+    <path d="M820 60 L868 98 L838 92 L820 108 L802 88 L784 94 Z" fill="#dfe8ff" opacity=".85"/>
+    <path d="M0 200 L0 170 L120 140 L260 175 L420 150 L600 185 L780 150 L960 180 L1100 155 L1200 175 L1200 200 Z" fill="#070b1a"/>
+  </svg>
+</section>
+
+<main>
+  <section class="intro">
+    <h2>About Me</h2>
+    <div class="rule"></div>
+    <p>Hi! I’m Anshu, a Computer Science student at BYU-Idaho. I’m passionate about coding, technology, and finding creative solutions to real-world problems. Outside of school, I love playing soccer, video games, and staying active. I also enjoy cooking, learning new things, and exploring big ideas like artificial intelligence and global solutions.</p>
+    <p>My goal is to graduate with a strong degree, build a meaningful career, and make a positive impact in the world. I believe in working hard, staying curious, and always pushing myself to be better.</p>
+    <p class="thanks">Thanks for visiting my page!</p>
+  </section>
+
+  <div class="grid">
+    <article class="card student">
+      <h3>Student Life</h3>
+      <p>I’m a Computer Science major at BYU-Idaho, where I’m passionate about coding, technology, and problem solving.</p>
+      <span class="byu">BYU–IDAHO</span>
+    </article>
+
+    <article class="card interests">
+      <h3>Interests</h3>
+      <ul>
+        <li>Coding &amp; Tech</li>
+        <li>Soccer</li>
+        <li>Video Games</li>
+        <li>Fitness &amp; Running</li>
+        <li>Learning About Big Ideas</li>
+      </ul>
+    </article>
+
+    <article class="card hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Playing Soccer</li>
+        <li>Gaming</li>
+        <li>Working Out</li>
+        <li>Cooking</li>
+      </ul>
+    </article>
+
+    <article class="card goals">
+      <h3>Goals</h3>
+      <ul>
+        <li>Graduate with a strong degree</li>
+        <li>Build a career in tech (or AI)</li>
+        <li>Make a positive impact in the world</li>
+      </ul>
+    </article>
+
+    <article class="card funfacts">
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>I love a good challenge</li>
+        <li>I enjoy learning new things</li>
+        <li>I’m always up for new experiences</li>
+      </ul>
+    </article>
+  </div>
+</main>
+
+<footer>© 2026 Anshu</footer>
+
+</body>
+</html>
